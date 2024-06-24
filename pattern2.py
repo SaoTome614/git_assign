@@ -11,7 +11,7 @@ def number_guessing():
 
     while attempts < max_attempts:
         guess = int(input("\n\nあと{}回 回答できます: ".format(max_attempts - attempts)))
-        if not (100 <= guess < 999):
+        if not (100 <= guess <= 999):
             print("【3桁】の数字を入力してください")
             continue
 
