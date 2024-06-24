@@ -25,6 +25,6 @@ def number_guessing():
         attempts += 1
     
     else:
-        print("残念!")
+        print("残念! 答えは{}でした".format(answer))
 
 number_guessing()
