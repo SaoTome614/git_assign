@@ -9,7 +9,7 @@ def number_guessing():
     print("3桁の数字を入力してください")
 
     while attempts < max_attempts:
-        guess = int(input(""))
+        guess = int(input("あと{}回 回答できます: ".format(max_attempts - attempts)))
         if not (100 <= guess < 999):
             print("【3桁】の数字を入力してください")
             continue
